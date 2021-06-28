@@ -2,8 +2,7 @@ const userFactory = require("./factory/userFactory");
 
 ;(async() =>{
      const user = await userFactory.factory()
-    //  const find = await user.find("george8234@hotmail.com")
-      
+       
      const insert = await user.insertWithSecurity({
          nome:"Teste",
          email:"ricaa123a@gmail.com",
@@ -20,14 +19,7 @@ const userFactory = require("./factory/userFactory");
      })
 
      console.log(insert)
-
-     // const updateUser  = await user.updateUser({email:"george12@gmail.com"},{logradouro:"cu e buceta"})
-     // const deleteUser = await user.deleteUser({email:"ricaa@gmail.com"},{logradouro:"cu e buceta"})
-     //          console.log(deleteUser)
-
-    //  const inner = await user.innerJoinUser()
-    //  console.log(inner)
-     
+ 
  })()
 
  
